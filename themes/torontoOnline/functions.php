@@ -22,7 +22,12 @@ function theme_widgets(){
         'after_title' => '</h3>'
     ));
 }
+/*Feature image*/
+add_theme_support('post-thumbnails');
+
 add_action('widgets_init', 'theme_widgets');
+
+add_image_size('featured', 1100, 418, true);
 
 add_filter('show_admin_bar','__return_false');
 
