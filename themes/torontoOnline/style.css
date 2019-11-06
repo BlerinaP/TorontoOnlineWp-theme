@@ -69,6 +69,9 @@ header nav ul li {
     text-align: center;
     margin-bottom: 5px;
 }
+header nav ul li.current-menu-item{
+    border-bottom: 2px solid #fff;
+}
 header nav ul li a {
     color: #fff;
     font-size: 18px;
@@ -100,10 +103,62 @@ p {
     margin-top: 20px!important;
 }
 
+/**Sidebar**/
+#testimonials h3{
+    color: #a00622;
+    font-size: 20px;
+    font-size: 2rem;
+}
+#testimonials .textwidget{
+    line-height: 30px;
+    color: #767676;
+    background-image: url("img/svg_quote.svg");
+    background-repeat: no-repeat;
+    background-position: left top;
+    padding-left: 86px;
+    font-style: italic;
+}
+#testimonials .textwidget p {
+    font-size: 24px;
+    font-size: 2.4rem;
+}
+#testimonials .textwidget span{
+    display: block;
+    text-align: right;
+    font-style: normal;
+    font-weight: bold;
+    margin-top: 20px;
+}
+/**Feature img**/
+.featured {
+    position: relative;
+    margin-bottom: 20px;
+    padding-top: 0;
+}
+.featured h2{
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    background-color: #a00622;
+    color: #fff;
+    padding: 10px 20px 10px 10px;
+    text-transform: lowercase;
+}
+h2.noimage{
+    color: #a00622;
+    font-size: 30px;
+    font-size: 3rem;
+    text-align: center;
+    padding: 30px 0;
+    border: 2px solid #a00622;
+}
+footer{
+    clear: both;
+}
 footer nav {
     display: none;
+    padding-top: 20px;
 }
-
 footer hr {
     border:2px solid #a00622;
 }
@@ -113,19 +168,95 @@ footer p{
     font-size: 1.8rem;
 }
 
-
-@media only screen and (min-width : 480px) {
-
+/*What to visit style*/
+ul.blog-visit li{
+    width: 100%;
+    padding: 5px;
 }
-
+ul.blog-visit li .featured{
+    position: relative;
+    margin-bottom: 0;
+}
+ul.blog-visit li .featured .category{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+}
+ul.blog-visit li .featured .category a{
+    background-color: #a00622;
+    text-decoration: none;
+    color: #FFFFFF;
+    padding: 5px;
+    font-size: 12px;
+    font-size: 1.2rem;
+    text-transform: lowercase;
+}
+ul.blog-visit li .content{
+    padding: 10px 20px;
+    margin-top: 0!important;
+}
+ul.blog-visit li .content h2{
+    margin: 0;
+    text-align: left;
+}
+ul.blog-visit li .content p{
+    font-size: 14px;
+    font-size: 1.4rem;
+    text-align: justify;
+}
+ul.blog-visit li .post-information{
+    background-color: #ebebeb;
+    padding: 5px 20px;
+    overflow: auto;
+}
+ul.blog-visit li .post-information p{
+    font-size: 14px;
+    font-size: 1.4rem;
+    color: #000000;
+}
+ul.blog-visit li .post-information div.author{
+    float: left;
+    width: 40%;
+}
+ul.blog-visit li .post-information div.author span{
+    color: #a00622;
+    font-weight: bold;
+}
+ul.blog-visit li .post-information div.date{
+    float: right;
+    width: 40%;
+    text-align: right;
+    font-weight: bold;
+}
 @media only screen and (min-width : 768px) {
     header nav ul li {
         display: inline;
         margin-left: 20px;
     }
+    /*Main Content*/
+    .primary{
+        float: left;
+        width: 70%;
+        padding-right: 20px;
+    }
+    .primary.no-sidebar{
+        width: 100%;
+    }
+    .secondary{
+        float: right;
+        width: 30%;
+        margin: 0;
+        clear: none;
+    }
+    #testimonials{
+        padding-top:60px;
+    }
+    ul.blog-visit li {
+        float: left;
+        width: 33.3%;
+    }
 
 }
-
 @media only screen and (min-width : 992px) {
     /** Header navigation **/
     header .logo {
