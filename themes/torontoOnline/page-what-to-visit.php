@@ -21,9 +21,32 @@ get_header(); ?>
         'orderbydate' => 'date'
     ); ?>
     <?php $visit = new WP_Query($args);?>
+
+    <ul class="blog-visit">
+
     <?php while($visit->have_posts()): $visit->the_post(); ?>
-    <?php print_r($visit); ?>
-    <?php endwhile; wp_reset_postdata(); ?>
+    <li>
+        <div class="featured">
+         <a href="<?php the_permalink(); ?>">
+            <?php the_post_thumbnail('visit');?>
+            <?php the_category(','); ?>
+         </a>
+        </div>
+        <div class="content">
+            <h2><?php the_title(); ?></h2>
+            <?php the_excerpt(); ?>
+        </div>
+        <div class="post-information">
+            <div class="author">
+                By: <?php the_author(); ?>
+            </div>
+            <div class="date">
+                <?php the_time('F j,Y'); ?>
+            </div>
+        </div>
+    </li>
+        <?php endwhile; wp_reset_postdata(); ?>
+    </ul>
 </div>
 <?php get_sidebar(); ?>
 <?php get_footer();?>
