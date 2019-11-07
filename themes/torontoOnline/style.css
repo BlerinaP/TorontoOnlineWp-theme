@@ -222,11 +222,33 @@ ul.blog-visit li .post-information div.author span{
     color: #a00622;
     font-weight: bold;
 }
+label[for="comment"]{
+display: none;
+}
 ul.blog-visit li .post-information div.date{
     float: right;
     width: 40%;
     text-align: right;
     font-weight: bold;
+}
+/*Single Post*/
+.single .written-info{
+    background-color: #ebebeb;
+    padding: 5px;
+    font-size: 14px;
+    font-size: 1.4rem;
+    overflow: auto;
+    margin-bottom: 20px;
+}
+.single .written-info .column{
+    float: left;
+    margin-right: 20px;
+}
+.single .written-info a{
+    font-weight: bold;
+}
+.single textarea{
+    width: 100%;
 }
 @media only screen and (min-width : 768px) {
     header nav ul li {
@@ -249,7 +271,7 @@ ul.blog-visit li .post-information div.date{
         clear: none;
     }
     #testimonials{
-        padding-top:60px;
+        padding-top:45px;
     }
     ul.blog-visit li {
         float: left;
