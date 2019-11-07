@@ -1,3 +1,5 @@
-jQuery(document).ready(function() {
-    alert("it works");
-});
+(function($) {
+    $('.bxslider').bxSlider({
+        mode: 'horizontal'
+    })
+})(jQuery);
