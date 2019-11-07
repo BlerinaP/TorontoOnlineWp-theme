@@ -258,20 +258,39 @@ ul.blog-visit li .post-information div.date{
     width: 100%;
 }
 /*Category*/
+.blog article,
 .category article {
     clear: both;
     margin-bottom: 20px;
     overflow: auto;
 }
+.blog article img,
 .category article img{
-    float: left;
-    width: 40%;
+    width: 100%;
 }
+.blog article .content-post,
 .category article .content-post{
-    float: left;
-    width: 60%;
-    padding-left: 20px;
+    width: 100%;
 }
+.blog h2{
+    margin: 0;
+    padding-bottom: 10px;
+}
+.blog .post-categories{
+    margin-top: 10px;
+}
+.blog .post-categories li a{
+    color: #FFFFFF;
+    background-color: #a00622;
+    padding: 5px;
+    border-radius: 5px;
+}
+.blog article .content-post date.time{
+    font-weight: bold;
+    float: right;
+    padding-top: 10px;
+}
+
 @media only screen and (min-width : 768px) {
     header nav ul li {
         display: inline;
@@ -298,6 +317,17 @@ ul.blog-visit li .post-information div.date{
     ul.blog-visit li {
         float: left;
         width: 33.3%;
+    }
+    .blog article img,
+    .category article img{
+        float: left;
+        width: 40%;
+    }
+    .blog article .content-post,
+    .category article .content-post{
+        float: left;
+        width: 60%;
+        padding-left: 20px;
     }
 
 }
@@ -343,3 +373,4 @@ ul.blog-visit li .post-information div.date{
         margin: 0 auto;
     }
 }
+
