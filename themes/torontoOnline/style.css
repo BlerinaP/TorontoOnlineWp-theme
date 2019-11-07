@@ -100,6 +100,11 @@ h3 {
     font-size:1.8rem;
     color: #a00622;
 }
+h4{
+    font-size: 30px;
+    font-size: 3.0rem;
+    line-height: 20px;
+}
 p {
     color: #000000;
     font-size: 12px;
@@ -358,7 +363,8 @@ div.bottom-front-page li{
 div.bottom-front-page li h3{
     margin: 10px 0;
 }
-div.bottom-front-page li a.read-more{
+div.bottom-front-page li a.read-more,
+ a.more-link {
     font-weight: bold;
     display: block;
     text-align: right;
@@ -406,6 +412,12 @@ div.bottom-front-page li a.read-more{
     /*Contact Form*/
     .wpcf7{
         width: 60%;
+    }
+    /*Front Page*/
+    div.bottom-front-page div.about-us{
+        float: left;
+        width: 30%;
+        padding-right: 20px;
     }
     /*Latest post Front Page*/
     div.bottom-front-page div.blog-tips{
