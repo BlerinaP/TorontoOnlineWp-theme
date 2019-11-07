@@ -1,7 +1,11 @@
 <?php
 function torontoOnline_scripts() {
+    /*Style*/
     wp_enqueue_style('style', get_stylesheet_uri() );
+    wp_enqueue_style('bxslidercss', get_stylesheet_directory_uri() . '/css/jquery.bxslider.css');
 
+    /*Scripts*/
+    wp_enqueue_script('bxsliderjs', get_stylesheet_directory_uri() . '/js/jquery.bxslider.min.js', array('jquery'),'4.3',true);
     wp_enqueue_script('jquery');
     wp_enqueue_script('scripts', get_stylesheet_directory_uri() . '/js/scripts.js',array('jquery'),'1.0', true);
 }
