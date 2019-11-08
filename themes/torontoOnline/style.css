@@ -348,7 +348,38 @@ ul.blog-visit li .post-information div.date{
     color: white;
 }
 /*Front Page CSS*/
-/*Latest two entries*/
+/**Widget Zone**/
+.what-to-visit .widget-title{
+    display: none;
+}
+
+/*Bx-Slider*/
+.bx-wrapper img{
+    width: 100%;
+}
+.what-to-visit .widget_sp_image{
+    width: 100%;
+    margin-bottom: 20px;
+}
+.what-to-visit .widget_sp_image img{
+    margin: 0 auto;
+    display: block;
+}
+.what-to-visit .widget_sp_image .widget_sp_image-description {
+    padding: 0 40px;
+}
+.what-to-visit .widget_sp_image p{
+    text-align: center;
+    background-color: #a00622;
+    color: white;
+    border-radius: 20px;
+    font-size: 24px;
+    font-size: 2.4rem;
+    font-weight: bold;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+    /*Latest two entries*/
 div.bottom-front-page{
     clear: both;
 }
@@ -418,6 +449,11 @@ div.bottom-front-page li a.read-more,
         float: left;
         width: 30%;
         padding-right: 20px;
+    }
+    /*Widget Zone*/
+    .what-to-visit .widget_sp_image{
+        float: left;
+        width: 33.3%;
     }
     /*Latest post Front Page*/
     div.bottom-front-page div.blog-tips{
